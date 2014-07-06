@@ -457,6 +457,10 @@ $backends['soap'] = array(
         'method' => 'changePassword',
         // This is the order of the arguments to the method specified above.
         'arguments' => array('username', 'oldpassword', 'newpassword'),
+        // If the SOAP server requires a login, we use these parameters.
+        'login' => array(
+            'username' => '',
+            'password' => '',
         // These parameters are directly passed to the SoapClient object, see
         // http://ww.php.net/manual/en/soapclient.soapclient.php for a
         // complete list of possible parameters.
